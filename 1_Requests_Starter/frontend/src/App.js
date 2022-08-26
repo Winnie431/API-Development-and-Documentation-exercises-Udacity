@@ -41,6 +41,7 @@ class App extends Component {
         type: "DELETE",
         success: (result) => {
           this.getBooks();
+          alert('Book sucessfully deleted.')
         },
         error: (error) => {
           alert('Unable to delete the book.')
